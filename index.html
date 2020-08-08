@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <script src="/static/aframe.min.js"></script>
+  <!-- include ar.js for A-Frame -->
+  <script src="/static/aframe-ar.js"></script>
+  <!-- include A-Frame-Extras -->
+  <script src="/static/aframe-extras.min.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity
+          position="0 0 0"
+          scale="0.5 0.5 0.5"
+          gltf-model="/models/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
